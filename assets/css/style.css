@@ -10,4 +10,54 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #eee;
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 25% 600px 1fr;
 }
+
+main {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 125px 1fr;
+    gap: 15px;
+}
+
+header {
+    grid-row: 1;
+    padding: 25px;
+    background: #F08164;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 33% 33% 33%;
+}
+
+.balance {
+    grid-column: 1;
+}
+
+.balance p {
+    grid-row: 1;
+}
+
+.balance h3 {
+    grid-row: 2;
+    font-size: 32px;
+}
+
+.logo {
+    grid-column: 4;
+    grid-row: 2;
+    margin-top: -10px;
+    justify-self: right;
+    padding-right: 15px;
+}
+
+.spending {
+    grid-row: 2;
+    background: #eee;
+    color: #252525;
+    border-radius: 25px;
+}
+
