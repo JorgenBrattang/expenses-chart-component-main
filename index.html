@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
 
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap" rel="stylesheet">
+      
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -29,18 +34,25 @@
         </figure>
       </div>
    </header>
-    <div class="spending">
-      <h3>Spending - Last 7 days</h3>
-      <div class="value-week">
-        <div class="bar-chart" id="mon">mon</div>
-        <div class="bar-chart" id="tue">tue</div>
-        <div class="bar-chart" id="wed">wed</div>
-        <div class="bar-chart" id="thu">thu</div>
-        <div class="bar-chart" id="fri">fri</div>
-        <div class="bar-chart" id="sat">sat</div>
-        <div class="bar-chart" id="sun">sun</div> 
+    <div class="spending-wrapper">
+        <h3>Spending - Last 7 days</h3>
+      <div class="week-wrapper">
+        <div class="bar-chart" id="mon"></div>
+        <p>mon</p>
+        <div class="bar-chart" id="tue"></div>
+        <p>tue</p>
+        <div class="bar-chart bar-chart--today" id="wed"></div>
+        <p>wed</p>
+        <div class="bar-chart bar-chart--hover" id="thu"></div>
+        <p>thu</p>
+        <div class="bar-chart" id="fri"></div>
+        <p>fri</p>
+        <div class="bar-chart" id="sat"></div>
+        <p>sat</p>
+        <div class="bar-chart" id="sun"></div> 
+        <p>sun</p>
       </div>
-      <div class="total">
+      <div class="total-wrapper">
         <div class="this-month">
           <p>Total this month</p>
           <h2>$478.33</h2>
@@ -51,11 +63,14 @@
         </div>
       </div>
     </div>
+    
+  </main>
+  <footer>
     <div class="attribution">
       <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
       <p>Coded by <a href="#">Jörgen Brattäng</a>.</p>
     </div>
-  </main>
+  </footer>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
